@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <title>Brandname.com.ph.test</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="navbar">
+        <div class="logo"><a href="#">BrandName</a></div>
+        <ul class="links">
+          <li><a href="#" class="navlink">Home</a></li>
+          <li><a href="#" class="navlink">Products</a></li>
+          <li><a href="#" class="navlink">Application</a></li>
+          <li><a href="#" class="navlink">About</a></li>
+          <li><a href="#" class="navlink">Contact Us</a></li>
+        </ul>
+        <a href="#" class="login_button">Log In</a>
+        <div class="toggle_button">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu open">
+        <li><a href="#" class="navlink">Home</a></li>
+        <li><a href="#" class="navlink">Products</a></li>
+        <li><a href="#" class="navlink">Application</a></li>
+        <li><a href="#" class="navlink">About</a></li>
+        <li><a href="#" class="navlink">Contact Us</a></li>
+        <li><a href="#" class="login_button">Log In</a></li>
+      </div>
+    </section>
+    <main>
+      <section id="hero">
+        <h1>WELCOME</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet,
+          deleniti enim eum itaque voluptas saepe provident atque voluptate
+          tempore deserunt at exercitationem soluta. Impedit, molestias
+          consequatur. Enim quidem rerum dicta?
+        </p>
+      </section>
+    </main>
+    <!--footer-->
+    <footer>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet,
+              deleniti enim eum itaque voluptas saepe provident atque voluptate
+              tempore deserunt at exercitationem soluta. Impedit, molestias
+              consequatur. Enim quidem rerum dicta?
+            </p>
+          </div>
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <div class="phone">
+              <a href="#"><i class="fas fa-phone-volume"></i>+6391234567</a>
+            </div>
+            <div class="email">
+              <a href="#"><i class="fas fa-envelope"></i>group5@email.com</a>
+            </div>
+            <div class="address">
+              <a href="#"
+                ><i class="fas fa-location-arrow"></i>Lian, Batangas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div><a href="#">Home</a></div>
+          <div><a href="#">Products</a></div>
+          <div><a href="#">Application</a></div>
+          <br />
+          <div><a href="#">Privacy Policy</a></div>
+          <div><a href="#">Terms &amp Condition</a></div>
+          <div><a href="#">FAQs</a></div>
+        </div>
+        <div class="right box">
+          <div class="topic">Sign up to our Newsletter</div>
+          <form action="#">
+            <input type="text" placeholder="Enter email address" required="" />
+            <input type="submit" name="" value="Send" />
+            <div class="media-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>
+          Copyright © 2020 <span>BrandName</span> All rights reserved Made by
+          Group5
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle_button");
+      const toggleBtnIcon = document.querySelector(".toggle_button i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen ? "fas fa-arrow-left" : "fas fa-bars";
+      };
+    </script>
+  </body>
+</html>

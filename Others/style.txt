@@ -1,0 +1,462 @@
+body {
+  height: 100vh;
+  background-color: #000;
+  background-image: url(images/MT-10.jpg);
+  background-size: auto;
+  background-position: center;
+}
+
+/**------FOR HEADER STYLE------ */
+.header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 64px;
+  max-width: 1750px;
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navbar .links {
+  display: flex;
+  padding-left: 0;
+  flex-grow: 1; /* Allow the links to grow and take up remaining space */
+  justify-content: center; /* Center the links horizontally */
+}
+
+.navbar .links .navlink {
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  margin-right: 2rem; /* Adjust the margin-right value as per your preference */
+}
+
+.navbar .toggle_button {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.login_button {
+  background-color: var(--color-royalblue);
+  color: var(--color-whitesmoke);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  outline: none;
+  border: 2px solid var(--color-royalblue);
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  cursor: pointer;
+  width: 140px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.login_button:hover {
+  background: none;
+  color: var(--color-whitesmoke);
+  scale: 1.05;
+}
+
+.login_button:active {
+  scale: 1.05;
+}
+
+.dropdown_menu {
+  position: absolute;
+  right: 2rem;
+  top: 80px;
+  height: 0;
+  width: 300px;
+  background:#111;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 320px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .login_button {
+  width: 100%;
+}
+
+section#hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+#hero h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+
+}
+/**------FOR NAV STYLE------ */
+a {
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+}
+
+a:hover {
+  color: var(--color-royalblue);
+  transition: all 0.3s ease-in-out;
+}
+
+/**------FOR FOOTER STYLE------ */
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+
+footer .content {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .content p,
+a {
+  color: #fff;
+}
+
+footer .content .box {
+  width: 33%;
+  transition: all 0.4s ease;
+}
+
+footer .content .topic {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+footer .content p {
+  text-align: justify;
+}
+
+footer .content .lower .topic {
+  margin: 24px 0 5px 0;
+}
+
+footer .content .lower i {
+  padding-right: 16px;
+}
+
+footer .content .middle {
+  padding-left: 80px;
+}
+
+footer .content .middle a {
+  line-height: 32px;
+  font-weight: 700;
+}
+
+footer .content .right input[type="text"] {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+
+footer .content .right input[type="submit"] {
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: var(--color-royalblue);
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid var(--color-royalblue);
+  transition: all 0.3s ease-in-out;
+}
+
+.content .right input[type="submit"]:hover {
+  background: none;
+  color: var(--color-royalblue);
+}
+
+footer .content .media-icons a {
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 25px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+
+.content .media-icons a:hover {
+  border-color: var(--color-royalblue);
+}
+
+footer .bottom {
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+  text-align: center;
+}
+
+footer .bottom span {
+  color: var(--color-royalblue);
+}
+
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--color-royalblue);
+}
+
+/**------FOR RESPONSIVENESS------ */
+
+@media (max-width: 1100px) {
+  footer .content .middle {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 950px) {
+  footer .content .box {
+    width: 50%;
+  }
+  .content .right {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  footer {
+    position: relative;
+  }
+  footer .content .box {
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle {
+    padding-left: 0;
+    margin-top: 50px;
+  }
+}
+
+
+
+    <footer>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet,
+              deleniti enim eum itaque voluptas saepe provident atque voluptate
+              tempore deserunt at exercitationem soluta. Impedit, molestias
+              consequatur. Enim quidem rerum dicta?
+            </p>
+          </div>
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <div class="phone">
+              <a href="#"><i class="ri-phone-fill"></i>+6391234567</a>
+            </div>
+            <div class="email">
+              <a href="#"><i class="ri-mail-fill"></i>group5@email.com</a>
+            </div>
+            <div class="address">
+              <a href="#"><i class="ri-navigation-fill"></i>Lian, Batangas</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div><a href="#">Home</a></div>
+          <div><a href="#">Products</a></div>
+          <div><a href="#">Application</a></div>
+          <br />
+          <div><a href="#">Privacy Policy</a></div>
+          <div><a href="#">Terms &amp Condition</a></div>
+          <div><a href="#">FAQs</a></div>
+        </div>
+        
+        <div class="right box">
+          <div class="topic">Sign up to our Newsletter</div>
+          <form action="#">
+            <input type="text" placeholder="Enter email address" required="" />
+            <input type="submit" name="" value="Send" />
+            <div class="media-icons">
+               <div class="topic">Our Social Media</div>
+              <a href="#"><i class="ri-facebook-fill ri-1x"></i></a>
+              <a href="#"><i class="ri-instagram-fill ri-1x"></i></a>
+              <a href="#"><i class="ri-twitter-fill ri-1x"></i></a>
+              <a href="#"><i class="ri-messenger-fill ri-1x"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>
+          Copyright © 2023 <span>BrandName</span> Made by
+          Group5
+        </p>
+      </div>
+    </footer>
+
+    footer {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background: #111;
+}
+
+footer .content {
+  max-width: 1920px;
+  margin: auto;
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-between;
+}
+
+footer .content p,
+a {
+  color: #fff;
+}
+
+footer .content .box {
+  width: 33%;
+  transition: all 0.4s ease;
+}
+
+footer .content .topic {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+footer .content p {
+  text-align: justify;
+}
+
+footer .content .lower .topic {
+  margin: 24px 0 5px 0;
+}
+
+footer .content .lower i {
+  padding-right: 16px;
+}
+
+footer .content .middle {
+  padding: 0 120px
+}
+
+footer .content .middle a {
+
+  font-weight: 600;
+}
+
+footer .content .right input[type="text"] {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+
+footer .content .right input[type="submit"] {
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: var(--color-royalblue);
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid var(--color-royalblue);
+  transition: all 0.3s ease-in-out;
+}
+
+footer .content .right input[type="submit"]:hover {
+  background: none;
+  color: var(--color-royalblue);
+}
+
+footer .content .media-icons .topic{
+  padding-top: 25px;
+}
+
+footer .content .media-icons a {
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 25px;
+  border: 2px solid #222222;
+  margin: 0px 5px 0 0;
+  transition: all 0.3s ease;
+}
+
+footer .content .media-icons a:hover {
+  border-color: var(--color-royalblue);
+  color: var(--color-royalblue);
+}
+
+footer .bottom {
+  width: 100%;
+  color: var(--color-light-gray);
+  text-align: center;
+  padding: 10px;
+}
+
+footer .bottom span {
+  color: var(--color-royalblue);
+}

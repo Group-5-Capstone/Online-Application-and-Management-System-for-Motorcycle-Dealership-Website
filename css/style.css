@@ -1,0 +1,353 @@
+/** Set body styles */
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+/** Header styles */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 20px 120px;
+  transition: all 0.3s ease-in-out;
+}
+
+/** Header styles when scrolled */
+header.scrolled {
+  background-color: var(--color-gray-100);
+}
+
+/** Brand logo styles */
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/** Navigation bar styles */
+.navbar {
+  display: flex;
+}
+
+/** Navigation link styles */
+.navbar a {
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  padding: 5px 0;
+  margin: 0px 20px;
+  transition: all 0.3s ease-in;
+}
+
+/** Navigation link styles on hover */
+.navbar a:hover {
+  color: var(--color-royalblue);
+}
+
+/** Active navigation link styles */
+.navbar a.active {
+  color: var(--color-royalblue);
+}
+
+/** Navigation bar styles when open */
+.navbar.open {
+  right: 2%;
+}
+
+/** Main section styles */
+.main {
+  display: flex;
+  align-items: center;
+}
+
+/** Main link styles */
+.main a {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  transition: all 0.3s ease-in;
+}
+
+/** User registration styles */
+.user {
+  display: flex;
+  align-items: center;
+}
+
+/** User icon styles */
+.user i {
+  font-size: 24px;
+  padding-left: 5px;
+}
+
+/** User link styles on hover */
+.user:hover {
+  color: var(--color-royalblue);
+}
+
+/** Menu icon styles */
+#menu-icon {
+  color: var(--color-white);
+  font-size: 28px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+/**------FOR FOOTER STYLE------ */
+
+/** Footer styles */
+footer {
+  width: 100%;
+  position: relative;
+  background: #111;
+}
+
+/** Footer content styles */
+footer .content {
+  max-width: 1300px;
+  margin: auto;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/** Paragraph and link styles */
+footer .content p,
+a {
+  color: var(--color-white);
+  transition: all 0.3s ease-in-out;
+}
+
+/** Paragraph and link styles on hover */
+footer .content p,
+a:hover {
+  color: var(--color-royalblue);
+}
+
+/** Box styles */
+footer .content .box {
+  width: 20%;
+  transition: all 0.4s ease;
+}
+
+/** Topic styles */
+footer .content .topic {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+/** Upper topic styles */
+footer .content .upper .topic {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/** Row1 paragraph styles */
+footer .content .row1 .upper p {
+  text-align: justify;
+  color: var(--color-white);
+}
+
+/** Row2 styles */
+footer .content .row2 {
+  padding-left: 20px;
+}
+
+/** Row2 link styles */
+footer .content .row2 a {
+  line-height: 32px;
+  font-weight: 600;
+}
+
+/** Row3 styles */
+footer .content .row3 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/** Row3 icon styles */
+footer .content .row3 i {
+  padding-right: 10px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+/** Row3 link styles */
+footer .content .row3 a {
+  line-height: 32px;
+  font-weight: 600;
+}
+
+/** Additional styles for Row4 */
+footer .content .row4 input[type="text"] {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: var(--color-white);
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+
+footer .content .row4 input[type="submit"] {
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: var(--color-white);
+  background: var(--color-royalblue);
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid var(--color-royalblue);
+  transition: all 0.3s ease-in-out;
+}
+
+footer .content .row4 input[type="submit"]:hover {
+  background: none;
+  color: var(--color-royalblue);
+}
+
+/** Media icons styles */
+footer .content .media-icons {
+  text-align: center;
+  padding-top: 25px;
+}
+
+/** Media icon styles */
+footer .content .media-icons a {
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 25px;
+  border: 2px solid #222222;
+  margin: 0px 5px 0 0;
+  transition: all 0.3s ease;
+}
+
+/** Media icon styles on hover */
+footer .content .media-icons a:hover {
+  border-color: var(--color-royalblue);
+  color: var(--color-royalblue);
+}
+
+/** Footer bottom styles */
+footer .bottom {
+  width: 100%;
+  color: var(--color-light-gray);
+  text-align: center;
+  padding: 10px;
+}
+
+/** Span styles */
+footer .bottom span {
+  color: var(--color-royalblue);
+}
+
+/**------FOR RESPONSIVENESS------ */
+
+/** Styles for screens up to 1280px */
+@media (max-width: 1280px) {
+  header {
+    padding: 14px 2%;
+    transition: 0.2s;
+  }
+  .navbar a {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+
+/** Styles for tablets up to 1080px */
+@media (max-width: 1080px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -200%;
+    width: 270px;
+    height: 35vh;
+    padding-top: 20px;
+    background: var(--color-gray-100);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .navbar a {
+    display: block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar a:hover {
+    color: var(--color-royalblue);
+    transform: translate(-10px);
+  }
+
+  .navbar a.active {
+    color: var(--color-royalblue);
+  }
+}
+
+/** Styles for screens up to 950px */
+@media (max-width: 950px) {
+  footer .content .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer .content .row2,
+  footer .content .row3 {
+    padding: 0;
+  }
+}
+
+/** Styles for screens up to 768px */
+@media (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -200%;
+    width: 96%;
+    height: auto;
+    padding: 20px 0;
+    background: var(--color-gray-100);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+}

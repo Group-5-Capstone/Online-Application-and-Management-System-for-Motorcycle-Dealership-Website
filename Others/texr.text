@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <title>Brandname.com.ph.test</title>
+  </head>
+  <body>
+    <section>
+      <nav class="primary-navbar">
+        <div class="navbar">
+          <div class="brandname">
+            <div class="brandnameText">BrandName</div>
+          </div>
+          <div class="navlinks">
+            <a href="#" class="navlink">Home</a>
+            <a href="#" class="navlink">Products</a>
+            <a href="#" class="navlink">Application</a>
+            <a href="#" class="navlink">About</a>
+            <a href="#" class="navlink">Contact Us</a>
+          </div>
+          <div class="user-auth">
+            <button class="login-button">Log In</button>
+            <button class="signup-button">Sign Up</button>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!--new section-->
+    <section></section>
+    <!--new section-->
+    <section></section>
+    <!--new section-->
+    <section></section>
+    <!--new section-->
+    <section>
+      <h4>hfuhwfhwuifhsdfsdf</h4>
+      <h4>hfuhwfhwuifhsdfsdf</h4>
+      <h4>hfuhwfhwuifhsdfsdf</h4>
+      <h4>hfuhwfhwuifhsdfsdf</h4>
+      <h4>hfuhwfhwuifhsdfsdf</h4>
+      <h4>hfuhwfhwuifhsdfsdf</h4>
+      <h4>hfuhwfhwuifhsdfsdf</h4>
+    </section>
+    <!--footer section-->
+    <footer class="footer" id="footer">
+      <div class="container" id="container">
+        <div class="row" id="row">
+          <div class="col1">
+            <h1 class="footer-brandname">BrandName</h1>
+            <p class="footer-brandname-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+              consequuntur iusto? Fugiat deserunt eveniet iste quos
+              exercitationem dolore recusandae officiis molestias unde ducimus
+              consequuntur, error quas vitae est enim possimus.
+            </p>
+          </div>
+          <div class="col2">
+            <div class="footer-col2">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Application</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-col2">
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms &amp Condition</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col3">
+            <p class="contact-us">Contact Us</p>
+            <p class="address">Brgy. Bagong Pook, Lian, Batangas</p>
+            <p class="contact-no">+639123456789</p>
+          </div>
+          <div class="col4">
+            <h4 class="Sign-up-Newsletter">Sign up to our Newsletter</h4>
+            <input type="email" name="email" placeholder="E-mail" />
+            <button class="subsribe-button">Subscribe</button>
+            <h4 class="our-social-media">Our Social Media</h4>
+            <a class="facebook-icon" href="http://facebook.com" target="_blank"></a>
+            <a class="instagram-icon" href="http://instagram.com" target="_blank">/a>
+            <a class="twitter-icon" href="http://twitter.com" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="copyright-footer" id="footer">
+      <div class="Copyright">Copyright © 2023 BrandName Created by Group5</div>
+    </footer>
+  </body>
+</html>
