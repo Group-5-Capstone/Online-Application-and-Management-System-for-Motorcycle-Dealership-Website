@@ -35,7 +35,7 @@
       <!-- User registration and menu icon -->
       <div class="main">
         <a href="#" class="user"
-          >Register<i class="ri-account-circle-fill"></i
+          >Log In<i class="ri-account-circle-fill"></i
         ></a>
         <div class="ri-menu-line" id="menu-icon"></div>
       </div>
@@ -43,14 +43,105 @@
 
     <!-- DITO ILALAGAY YUNG CONTENT KADA SECTION-->
     <section id="Content1">
-      <!-- sample image -->
       <div>
-        <img src="../images/Banner.jpg" alt="" style="max-width: 100%" />
+        <img src="../images/MT-125.jpg" alt="section1-image-bg" />
+        <div class="tagline-text">
+          <h2>Unleash Wild, Drive with us</h2>
+          <div class="buttons">
+            <button class="explore-button">Explore</button>
+            <button class="register-button" onclick="toggleRegisterForm()">
+              Register
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="Content2">
-      <div></div>
+      <div class="back-icon">
+        <i class="ri-arrow-left-s-line"></i>
+      </div>
+      <div class="content-inner">
+        <div class="ca-tagline">
+          <div>
+            Start Your Journey with Us <br />
+            Sign Up and Create Your Account
+          </div>
+        </div>
+        <div class="register-form">
+          <div class="ca-title">Create A New Account</div>
+          <form action="#">
+            <div class="form-group">
+              <label for="first-name">First Name:</label>
+              <input
+                type="text"
+                id="first-name"
+                placeholder="eg. Juan"
+                required=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="middle-initial">Middle Initial:</label>
+              <input
+                type="text"
+                id="middle-initial"
+                placeholder="eg. D"
+                required=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name:</label>
+              <input
+                type="text"
+                id="last-name"
+                placeholder="e.g Dela Cruz"
+                required=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="e.g juandelacruz123@mail.com"
+                required=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" placeholder="" required="" />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password:</label>
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder=""
+                required=""
+              />
+            </div>
+            <input type="submit" value="Create Account" />
+          </form>
+          <p>
+            Already have an account? <a href="#"><span>Log in.</span></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Content3">
+      <div>
+        <img src="../images/MT-125.jpg" alt="section1-image-bg" />
+        <div class="tagline-text">
+          <h2>Unleash Wild, Drive with us</h2>
+          <div class="buttons">
+            <button class="explore-button">Explore</button>
+            <button class="register-button" onclick="toggleRegisterForm()">
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--Footer Design-->
