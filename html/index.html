@@ -7,6 +7,7 @@
     <!-- External CSS files -->
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media-queries.css" />
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
@@ -42,7 +43,7 @@
     </header>
 
     <!-- DITO ILALAGAY YUNG CONTENT KADA SECTION-->
-    <section id="Content1">
+    <section id="Content1" >
       <div>
         <img src="../images/MT-125.jpg" alt="section1-image-bg" />
         <div class="tagline-text">
@@ -58,18 +59,15 @@
     </section>
 
     <section id="Content2">
-      <div class="back-icon">
-        <i class="ri-arrow-left-s-line"></i>
-      </div>
       <div class="content-inner">
-        <div class="ca-tagline">
-          <div>
-            Start Your Journey with Us <br />
-            Sign Up and Create Your Account
-          </div>
-        </div>
         <div class="register-form">
-          <div class="ca-title">Create A New Account</div>
+          <span class="icon-close" onclick="closeForm()"><i class="ri-close-line"></i></span>
+          <div class="ca-title">
+            <h2>Create A New Account</h2>
+            <p>
+            Start Your Journey with Us Today.
+            </p>
+          </div>
           <form action="#">
             <div class="form-group">
               <label for="first-name">First Name:</label>
@@ -110,21 +108,20 @@
             <div class="form-group">
               <label for="password">Password:</label>
               <input type="password" id="password" placeholder="" required="" />
-            </div>
-            <div class="form-group">
-              <label for="confirm-password">Confirm Password:</label>
-              <input
-                type="password"
-                id="confirm-password"
-                placeholder=""
-                required=""
-              />
+              <i class="eye-icon ri-eye-close-line" data-toggle="password"></i>
             </div>
             <input type="submit" value="Create Account" />
           </form>
-          <p>
+          <div class="have-account">
+            <p>
             Already have an account? <a href="#"><span>Log in.</span></a>
           </p>
+          </div>
+          <div class="tac-pp">
+            <p>
+            By clicking the Sign up button you agree to our<a href="#"><span>Terms &amp Condition</span></a>and<a href="#"><span>Privacy Policy.</span></a>
+          </p>
+        </div>
         </div>
       </div>
     </section>
@@ -133,12 +130,7 @@
       <div>
         <img src="../images/MT-125.jpg" alt="section1-image-bg" />
         <div class="tagline-text">
-          <h2>Unleash Wild, Drive with us</h2>
-          <div class="buttons">
-            <button class="explore-button">Explore</button>
-            <button class="register-button" onclick="toggleRegisterForm()">
-              Register
-            </button>
+          <h2>yow</h2>
           </div>
         </div>
       </div>
