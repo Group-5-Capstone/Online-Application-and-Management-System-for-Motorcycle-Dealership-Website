@@ -19,23 +19,25 @@
       rel="stylesheet"
     />
     <!-- Title -->
-    <title>Brandname.com.ph.test</title>
+    <title>Home</title>
   </head>
+
   <body>
+    
     <header>
       <!-- Brand logo Text -->
-      <a href="#" class="logo">BrandName</a>
+      <a href="../html/index.html" class="logo">BrandName</a>
       <!-- Navigation bar -->
       <ul class="navbar">
-        <li><a href="" class="active">Home</a></li>
-        <li><a href="">Products</a></li>
-        <li><a href="">Application</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact Us</a></li>
+        <li><a href="../html/index.html" class="active">Home</a></li>
+        <li><a href="../html/products.html">Products</a></li>
+        <li><a href="../html/application.html">Application</a></li>
+        <li><a href="../html/about.html">About</a></li>
+        <li><a href="../html/contact.html">Contact Us</a></li>
       </ul>
       <!-- User registration and menu icon -->
       <div class="main">
-        <a href="#" class="user"
+        <a href="#" class="user" id="loginLink"
           >Log In<i class="ri-account-circle-fill"></i
         ></a>
         <div class="ri-menu-line" id="menu-icon"></div>
@@ -49,7 +51,7 @@
         <div class="tagline-text">
           <h2>Unleash Wild, Drive with us</h2>
           <div class="buttons">
-            <button class="explore-button">Explore</button>
+            <button class="explore-button" onclick="toggleProductSection()">Explore</button>
             <button class="register-button" onclick="toggleRegisterForm()">
               Register
             </button>
@@ -60,7 +62,7 @@
 
     <section id="Content2">
       <div class="content-inner">
-        <div class="register-form">
+        <div class="register-form" id="registerForm">
           <span class="icon-close" onclick="closeForm()"><i class="ri-close-line"></i></span>
           <div class="ca-title">
             <h2>Create A New Account</h2>
@@ -114,15 +116,46 @@
           </form>
           <div class="have-account">
             <p>
-            Already have an account? <a href="#"><span>Log in.</span></a>
+            Already have an account? <a href="#" onclick="showLoginForm()"><span>Log in.</span></a>
           </p>
           </div>
           <div class="tac-pp">
             <p>
-            By clicking the Sign up button you agree to our<a href="#"><span>Terms &amp Condition</span></a>and<a href="#"><span>Privacy Policy.</span></a>
+            By clicking the Sign up button you agree to our<a href="../html/Terms-and-condition.html"><span>Terms &amp Condition</span></a>and<a href="../html/privacy-policy.html"><span>Privacy Policy.</span></a>
           </p>
         </div>
         </div>
+        <div class="login-form" id="loginForm">
+          <span class="icon-close" onclick="closeForm()"><i class="ri-close-line"></i></span>
+          <div class="ca-title">
+            <h2>Welcome Back!</h2>
+            <p>
+            Please log in to continue.
+            </p>
+          </div>
+          <form action="#">
+            <div class="form-group">
+              <label for="id-number">Account Number:</label>
+              <input
+                type="text"
+                id="id-number"
+                placeholder="eg. 10001234567"
+                required=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password:</label>
+              <input type="password" id="login-password" placeholder="" required="" />
+              <i class="eye-icon ri-eye-close-line" data-toggle="password"></i>
+            </div>
+            <input type="submit" value="Log in" />
+          </form>
+          <div class="dont-have-account">
+            <p>
+              Don't have an account? <a href="#" onclick="showRegistrationForm()"><span>Create new account.</span></a>
+            </p>
+          </div>
+          </div>
       </div>
     </section>
 
@@ -151,13 +184,13 @@
         </div>
 
         <div class="row2 box">
-          <li><a href="" class="active">Home</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Application</a></li>
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/products.html">Products</a></li>
+          <li><a href="../html/application.html">Application</a></li>
           <br />
-          <li><a href="" class="active">Privacy Policy</a></li>
-          <li><a href="">Terms &amp Condition</a></li>
-          <li><a href="">FAQs</a></li>
+          <li><a href="../html/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../html/Terms-and-condition.html">Terms &amp Condition</a></li>
+          <li><a href="../html/contact.html">FAQs</a></li>
         </div>
 
         <div class="row3 box">
@@ -179,10 +212,10 @@
             <input type="text" placeholder="Enter email address" required="" />
             <input type="submit" name="" value="Send" />
             <div class="media-icons">
-              <a href="#"><i class="ri-facebook-fill ri-1x"></i></a>
-              <a href="#"><i class="ri-instagram-fill ri-1x"></i></a>
-              <a href="#"><i class="ri-twitter-fill ri-1x"></i></a>
-              <a href="#"><i class="ri-messenger-fill ri-1x"></i></a>
+              <a href="http://facebook.com" target="_blank"><i class="ri-facebook-fill ri-1x"></i></a>
+              <a href="http://instagram.com" target="_blank"><i class="ri-instagram-fill ri-1x"></i></a>
+              <a href="http://twitter.com" target="_blank"><i class="ri-twitter-fill ri-1x"></i></a>
+              <a href="http://messenger.com" target="_blank"><i class="ri-messenger-fill ri-1x"></i></a>
             </div>
           </form>
         </div>
@@ -194,5 +227,6 @@
 
     <!--JS Link-->
     <script type="text/javascript" src="../javascript/script.js"></script>
+
   </body>
 </html>

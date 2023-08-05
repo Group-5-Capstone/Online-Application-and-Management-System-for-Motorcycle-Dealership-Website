@@ -1,0 +1,238 @@
+/**------FOR SECTION------ */
+#Content1 {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  margin-bottom: -1px;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+#Content1 img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+#Content1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(59, 32, 10, 0.315);
+  z-index: 2;
+}
+
+.tagline-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.tagline-text h2 {
+  font-size: 58px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+.tagline-text h2:hover {
+  color: gray;
+}
+
+.about-brand {
+  font-size: 18px;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+.about-brand:hover {
+  color: gray;
+}
+
+.tagline-text .buttons {
+  margin-top: 30px;
+}
+
+.tagline-text .buttons button {
+  margin: 5px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  min-width: 200px;
+  background: none;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.tagline-text .buttons button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: rgba(245, 244, 244, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: height 0.2s ease-in-out;
+  z-index: -1;
+}
+
+.tagline-text .buttons button:hover {
+  color: var(--color-white);
+}
+
+.tagline-text .buttons button:hover::before {
+  height: 100%;
+}
+
+#Content3 {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  margin-bottom: -1px;
+  background-color: rgb(23, 16, 88);
+}
+
+#Content3 .heading {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+#Content3 .heading h2 {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+#Content3 .brandDescription {
+  padding: 20px 300px;
+}
+
+#Content3 .mission-container {
+  margin: 5px 100px 100px 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  border-right: 3px solid white;
+}
+
+#Content3 .mission-image img {
+  width: 700px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+#Content3 .mission-text{
+  margin:20px;
+  margin-top: 150px;
+}
+
+#Content3 .mission {
+  font-size: 38px;
+  color: var(--color-white);
+}
+
+#Content3 .mission-content {
+  font-size: 20px;
+  color: var(--color-white);
+  text-align: justify;
+}
+
+
+#Content3 .vision-container {
+  margin: 5px 100px 100px 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  border-left: 3px solid white;
+}
+
+#Content3 .vision-image img {
+  width: 700px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+#Content3 .vision-text{
+  margin:20px;
+  margin-top: 150px;
+}
+
+#Content3 .vision {
+  font-size: 38px;
+  color: var(--color-white);
+}
+
+#Content3 .vision-content {
+  font-size: 20px;
+  color: var(--color-white);
+  text-align: justify;
+}
+
+#Content4 {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  margin-bottom: -1px;
+  background-color: rgb(23, 16, 88);
+}
+
+#Content4 .heading {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+#Content4 .heading h2 {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+#Content4 .brandDescription {
+  padding: 20px 300px;
+}
+
+#Content4 .faqs-section {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+  margin-top: 200px;
+}
+
+#Content4 .faqs-section h2 {
+  font-size: 45px;
+  font-weight: 400;
+}

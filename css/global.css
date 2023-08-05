@@ -5,6 +5,7 @@
   font-family: var(--font-poppins);
   text-decoration: none;
   list-style: none;
+  cursor: default;
 }
 
 :root {
@@ -19,7 +20,7 @@
   /* Colors */
   --color-whitesmoke: #f1f1f1;
   --color-royalblue: #0075ff;
-    --color-darkblue: #002550;
+  --color-darkblue: #002550;
   --color-gray-100: #212427;
   --color-white: #fff;
   --color-light-gray: #5a5a5a;
@@ -30,4 +31,311 @@
   /* border radiuses */
   --br-15xl-5: 34.5px;
   --br-8xs: 5px;
+}
+
+/** Set body styles */
+body {
+  min-height: 100vh;
+  min-width: 330px;
+  width: 100%;
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide the scrollbar */
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: rgba(31, 30, 30, 0.5);
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: rgba(245, 244, 244, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 5em;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 244, 244, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/** Header styles */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 15px 120px;
+  transition: all 0.3s ease-in-out;
+}
+
+/** Header styles when scrolled */
+header.scrolled {
+  background: rgba(90, 90, 90, 0.308);
+  box-shadow: 0 5px 10px 0 rgba(24, 26, 49, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/** Brand logo styles */
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.logo:hover {
+  color: var(--color-white);
+}
+
+/** Navigation bar styles */
+.navbar {
+  display: flex;
+}
+
+/** Navigation link styles */
+.navbar a {
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  padding: 5px 0;
+  margin: 0px 20px;
+  transition: all 0.3s ease-in;
+}
+
+/** Navigation link styles on hover */
+.navbar a:hover {
+  color: var(--color-royalblue);
+}
+
+/** Active navigation link styles */
+.navbar a.active {
+  border-bottom: 2px solid var(--color-white);
+}
+
+/** Navigation bar styles when open */
+.navbar.open {
+  right: 2%;
+}
+
+/** Main section styles */
+.main {
+  display: flex;
+  align-items: center;
+}
+
+/** Main link styles */
+.main a {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  transition: all 0.3s ease-in;
+}
+
+/** User registration styles */
+.user {
+  display: flex;
+  align-items: center;
+}
+
+/** User icon styles */
+.user i {
+  font-size: 24px;
+  padding-left: 5px;
+}
+
+/** User link styles on hover */
+.user:hover {
+  color: var(--color-royalblue);
+}
+
+/** Menu icon styles */
+#menu-icon {
+  color: var(--color-white);
+  font-size: 28px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+/**------FOR FOOTER STYLE------ */
+
+/** Footer styles */
+footer {
+  width: 100%;
+  position: relative;
+  background: #111;
+}
+
+/** Footer content styles */
+footer .content {
+  max-width: 1300px;
+  margin: auto;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/** Paragraph and link styles */
+footer .content p,
+a {
+  color: var(--color-white);
+  transition: all 0.3s ease-in-out;
+}
+
+/** Paragraph and link styles on hover */
+footer .content p,
+a:hover {
+  color: var(--color-royalblue);
+}
+
+/** Box styles */
+footer .content .box {
+  width: 20%;
+  transition: all 0.4s ease;
+}
+
+/** Topic styles */
+footer .content .topic {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+/** Upper topic styles */
+footer .content .upper .topic {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/** Row1 paragraph styles */
+footer .content .row1 .upper p {
+  text-align: justify;
+  color: var(--color-white);
+}
+
+/** Row2 styles */
+footer .content .row2 {
+  padding-left: 20px;
+}
+
+/** Row2 link styles */
+footer .content .row2 a {
+  line-height: 32px;
+  font-weight: 600;
+}
+
+/** Row3 styles */
+footer .content .row3 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/** Row3 icon styles */
+footer .content .row3 i {
+  padding-right: 10px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+/** Row3 link styles */
+footer .content .row3 a {
+  line-height: 32px;
+  font-weight: 600;
+}
+
+/** Additional styles for Row4 */
+footer .content .row4 input[type="text"] {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: var(--color-white);
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+
+footer .content .row4 input[type="submit"] {
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: var(--color-white);
+  background: var(--color-royalblue);
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid var(--color-royalblue);
+  transition: all 0.3s ease-in-out;
+}
+
+footer .content .row4 input[type="submit"]:hover {
+  background: none;
+  color: var(--color-royalblue);
+}
+
+/** Media icons styles */
+footer .content .media-icons {
+  text-align: center;
+  padding-top: 25px;
+}
+
+/** Media icon styles */
+footer .content .media-icons a {
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 25px;
+  border: 2px solid #222222;
+  margin: 0px 5px 0 0;
+  transition: all 0.3s ease;
+}
+
+/** Media icon styles on hover */
+footer .content .media-icons a:hover {
+  border-color: var(--color-royalblue);
+  color: var(--color-royalblue);
+}
+
+/** Footer bottom styles */
+footer .bottom {
+  width: 100%;
+  color: var(--color-light-gray);
+  text-align: center;
+  padding: 10px;
+}
+
+/** Span styles */
+footer .bottom span {
+  color: var(--color-royalblue);
 }
