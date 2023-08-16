@@ -23,271 +23,164 @@
   </head>
 
   <body>
-    <header>
-      <!-- Brand logo Text -->
-      <a href="../html/index.html" class="logo">BrandName</a>
-      <!-- Navigation bar -->
-      <ul class="navbar">
-        <li><a href="../html/index.html">Home</a></li>
-        <li><a href="../html/products.html" class="active">Products</a></li>
-        <li><a href="../html/application.html">Application</a></li>
-        <li><a href="../html/about.html">About</a></li>
-        <li><a href="../html/contact.html">Contact Us</a></li>
-      </ul>
-      <!-- User registration and menu icon -->
-      <div class="main">
-        <a href="#" class="user"
-          >Log In<i class="ri-account-circle-fill"></i
-        ></a>
-        <div class="ri-menu-line" id="menu-icon"></div>
-      </div>
-    </header>
-
-    <section id="Content1">
-      <div>
-        <img src="../images/Banner.jpg" alt="section1-image-bg" />
-        <div class="tagline-text">
-          <h2>Dicover Something New With Us</h2>
-          <div class="buttons">
-            <button class="explore-button" onclick="toggleProductSection()">
-              Explore
-            </button>
-            <button class="register-button" onclick="toggleRegisterForm()">
-              Find Dealer
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="Content2">
-      <div class="content-inner">
-        <div class="register-form">
-          <span class="icon-close" onclick="closeForm()"
-            ><i class="ri-close-line"></i
-          ></span>
-          <div class="ca-title">
-            <h2>Create A New Account</h2>
-            <p>Start Your Journey with Us Today.</p>
-          </div>
-          <form action="#">
-            <div class="form-group">
-              <label for="first-name">First Name:</label>
-              <input
-                type="text"
-                id="first-name"
-                placeholder="eg. Juan"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="middle-initial">Middle Initial:</label>
-              <input
-                type="text"
-                id="middle-initial"
-                placeholder="eg. D"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="last-name">Last Name:</label>
-              <input
-                type="text"
-                id="last-name"
-                placeholder="e.g Dela Cruz"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="e.g juandelacruz123@mail.com"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="password">Password:</label>
-              <input type="password" id="password" placeholder="" required="" />
-              <i class="eye-icon ri-eye-close-line" data-toggle="password"></i>
-            </div>
-            <input type="submit" value="Create Account" />
-          </form>
-          <div class="have-account">
-            <p>
-              Already have an account? <a href="#"><span>Log in.</span></a>
-            </p>
-          </div>
-          <div class="tac-pp">
-            <p>
-              By clicking the Sign up button you agree to our<a href="#"
-                ><span>Terms &amp Condition</span></a
-              >and<a href="#"><span>Privacy Policy.</span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="Content3">
-      <img src="../images/MT-10.jpg" alt="section1-image-bg" />
-      <!--../images/MT-10.jpg-->
-      <div class="tagline-text">
-        <h2>Products</h2>
-      </div>
-      <div class="product-navbar">
-        <button class="product-nav-btn" id="toggleBtn">
-          Select Category<i class="ri-arrow-down-s-fill" id="toggleIcon"></i>
-        </button>
-        <ul class="product-nav-links" id="navLinks">
-          <li><a href="" class="selected">Category 1</a></li>
-          <li><a href="">Category 2</a></li>
-          <li><a href="">Category 3</a></li>
-          <li><a href="">Category 4</a></li>
-          <li><a href="">Category 5</a></li>
+    <main>
+      <header>
+        <!-- Brand logo Text -->
+        <a href="../html/index.html" class="logo">BrandName</a>
+        <!-- Navigation bar -->
+        <ul class="navbar">
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/products.html" class="active">Products</a></li>
+          <li><a href="../html/application.html">Application</a></li>
+          <li><a href="../html/about.html">About</a></li>
+          <li><a href="../html/contact.html">Contact Us</a></li>
         </ul>
-      </div>
+        <!-- User registration and menu icon -->
+        <div class="main">
+          <a href="#" class="user"
+            >Log In<i class="ri-account-circle-fill"></i
+          ></a>
+          <div class="ri-menu-line" id="menu-icon"></div>
+        </div>
+      </header>
 
-      <div class="product-content">
-        <div class="product-card">
-          <div class="product">
-            <h3 class="product-name">Motorcycle name</h3>
-            <div class="product-image">image</div>
-            <p class="product-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
+      <section id="Content1">
+        <div>
+          <img src="../images/home 3.jpg" alt="section1-image-bg" />
+          <div class="tagline-text">
+            <h2>Dicover Something New With Us</h2>
             <div class="buttons">
-              <button
-                class="product-explore-button"
-                onclick="toggleProductSection()"
-              >
+              <button class="explore-button" onclick="toggleProductSection()">
                 Explore
+              </button>
+              <button class="register-button" onclick="toggleRegisterForm()">
+                Inquire
               </button>
             </div>
           </div>
         </div>
-        <div class="product-card">
-          <div class="product">
-            <h3 class="product-name">Motorcycle name</h3>
-            <div class="product-image">image</div>
-            <p class="product-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <div class="buttons">
-              <button
-                class="product-explore-button"
-                onclick="toggleProductSection()"
-              >
-                Explore
-              </button>
+      </section>
+
+      <section id="Content2">
+        <div class="content-inner">
+          <div class="register-form">
+            <span class="icon-close" onclick="closeForm()"
+              ><i class="ri-close-line"></i
+            ></span>
+            <div class="ca-title">
+              <h2>Inquire</h2>
+              <p>Please fill up the form.</p>
+            </div>
+            <form action="#">
+              <div class="form-group">
+                <label for="inquiry-type">Type of Inquiry:</label>
+                <select id="inquiry-type" name="inquiry-type-select">
+                  <option value="">Select Type</option>
+                  <option value="Type a">Looking for Second Hand</option>
+                  <option value="Type b">Services</option>
+                  <option value="Type c"></option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="branches-type">Select Branches:</label>
+                <select id="branches-type" name="branch-type-select">
+                  <option value="">Select Branch</option>
+                  <option value="Branch 1">Balayan</option>
+                  <option value="Branch 2">Calaca</option>
+                  <option value="Branch 3">Lian</option>
+                  <option value="Branch 4">Nasugbu</option>
+                  <option value="Branch 5">Tuy</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="first-name">Name:</label>
+                <input type="text" id="first-name" placeholder="" required="" />
+              </div>
+              <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" placeholder="" required="" />
+              </div>
+              <div class="form-group">
+                <label for="contact">Contact No:</label>
+                <input type="text" id="contact" placeholder="" required="" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="" required="" />
+              </div>
+              <input type="submit" value="Submit" />
+            </form>
+            <div class="tac-pp">
+              <p>
+                By clicking the Submit button you agree to our<a href="../html/Terms-and-condition.html"
+                  ><span>Terms &amp Condition</span></a
+                >and<a href="../html/privacy-policy.html"><span>Privacy Policy.</span></a>
+              </p>
             </div>
           </div>
         </div>
-        <div class="product-card">
-          <div class="product">
-            <h3 class="product-name">Motorcycle name</h3>
-            <div class="product-image">image</div>
-            <p class="product-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <div class="buttons">
-              <button
-                class="product-explore-button"
-                onclick="toggleProductSection()"
-              >
-                Explore
-              </button>
+      </section>
+
+      <section id="Content3">
+        <div class="heading">
+          <h1 class="Title">Our Products</h1>
+        </div>
+        <div class="home-product-row">
+          <div class="home-product-col">
+            <img src="../images/motor 1.png" alt="" />
+            <h2 class="testi-name">DIO</h2>
+            <div class="c3-buttons">
+              <a href="../html/products-specs.html">View Full Specs</a>
+            </div>
+          </div>
+          <div class="home-product-col">
+            <img src="../images/motor 2.png" alt="" />
+            <h2 class="testi-name">BeAT Street (STD)</h2>
+            <div class="c3-buttons">
+              <a href="../html/products.html">View Full Specs</a>
+            </div>
+          </div>
+          <div class="home-product-col">
+            <img src="../images/motor 3.png" alt="" />
+            <h2 class="testi-name">BeAT Fashion Sport (STD)</h2>
+            <div class="c3-buttons">
+              <a href="../html/products.html">View Full Specs</a>
+            </div>
+          </div>
+          <div class="home-product-col">
+            <img src="../images/motor 3.png" alt="" />
+            <h2 class="testi-name">BeAT Fashion Sport (STD)</h2>
+            <div class="c3-buttons">
+              <a href="../html/products.html">View Full Specs</a>
+            </div>
+          </div>
+          <div class="home-product-col">
+            <img src="../images/motor 3.png" alt="" />
+            <h2 class="testi-name">BeAT Fashion Sport (STD)</h2>
+            <div class="c3-buttons">
+              <a href="../html/products.html">View Full Specs</a>
+            </div>
+          </div>
+          <div class="home-product-col">
+            <img src="../images/motor 3.png" alt="" />
+            <h2 class="testi-name">BeAT Fashion Sport (STD)</h2>
+            <div class="c3-buttons">
+              <a href="../html/products.html">View Full Specs</a>
+            </div>
+          </div>
+          <div class="home-product-col">
+            <img src="../images/motor 3.png" alt="" />
+            <h2 class="testi-name">BeAT Fashion Sport (STD)</h2>
+            <div class="c3-buttons">
+              <a href="../html/products.html">View Full Specs</a>
             </div>
           </div>
         </div>
-        <div class="product-card">
-          <div class="product">
-            <h3 class="product-name">Motorcycle name</h3>
-            <div class="product-image">image</div>
-            <p class="product-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <div class="buttons">
-              <button
-                class="product-explore-button"
-                onclick="toggleProductSection()"
-              >
-                Explore
-              </button>
-            </div>
-          </div>
+        <div class="c3-buttons">
+          <a href="../html/application.html">Send Application</a>
         </div>
-        <div class="product-card">
-          <div class="product">
-            <h3 class="product-name">Motorcycle name</h3>
-            <div class="product-image">image</div>
-            <p class="product-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <div class="buttons">
-              <button
-                class="product-explore-button"
-                onclick="toggleProductSection()"
-              >
-                Explore
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product">
-            <h3 class="product-name">Motorcycle name</h3>
-            <div class="product-image">image</div>
-            <p class="product-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <div class="buttons">
-              <button
-                class="product-explore-button"
-                onclick="toggleProductSection()"
-              >
-                Explore
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product">
-            <h3 class="product-name">Motorcycle name</h3>
-            <div class="product-image">image</div>
-            <p class="product-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <div class="buttons">
-              <button
-                class="product-explore-button"
-                onclick="toggleProductSection()"
-              >
-                Explore
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product">
-            <h3 class="product-name">Motorcycle name</h3>
-            <div class="product-image">image</div>
-            <p class="product-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <div class="buttons">
-              <button
-                class="product-explore-button"
-                onclick="toggleProductSection()"
-              >
-                Explore
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!--Footer Design-->
     <footer>

@@ -5,6 +5,7 @@
   font-family: var(--font-poppins);
   text-decoration: none;
   list-style: none;
+  cursor: default;
 }
 
 :root {
@@ -79,7 +80,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.295)08);
+  box-shadow: 0 2px 5px 0 rgba(24, 26, 49, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 15px 120px;
   transition: all 0.3s ease-in-out;
 }
@@ -97,13 +102,13 @@ header.scrolled {
 .logo {
   display: flex;
   align-items: center;
-  color: var(--color-white);
+  color: var(--color-gray-100);
   font-size: 24px;
   font-weight: 600;
 }
 
 .logo:hover {
-  color: var(--color-white);
+  color: var(--color-royalblue);
 }
 
 /** Navigation bar styles */
@@ -113,7 +118,7 @@ header.scrolled {
 
 /** Navigation link styles */
 .navbar a {
-  color: var(--color-white);
+  color: var(--color-gray-100);
   font-size: var(--font-size-lg);
   font-weight: 400;
   padding: 5px 0;
@@ -128,7 +133,7 @@ header.scrolled {
 
 /** Active navigation link styles */
 .navbar a.active {
-  border-bottom: 2px solid var(--color-white);
+  border-bottom: 2px solid var(--color-gray-100);
 }
 
 /** Navigation bar styles when open */
@@ -146,7 +151,7 @@ header.scrolled {
 .main a {
   margin-right: 25px;
   margin-left: 10px;
-  color: var(--color-white);
+  color: var(--color-gray-100);
   font-size: var(--font-size-lg);
   font-weight: 400;
   transition: all 0.3s ease-in;
@@ -171,13 +176,14 @@ header.scrolled {
 
 /** Menu icon styles */
 #menu-icon {
-  color: var(--color-white);
+  color: var(--color-gray-100);
   font-size: 28px;
   font-weight: 600;
   cursor: pointer;
   z-index: 10001;
   display: none;
 }
+
 
 /**------FOR FOOTER STYLE------ */
 

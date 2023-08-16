@@ -136,7 +136,6 @@ function toggleProductSection() {
 const readMoreButton = document.getElementById("readMoreButton");
 readMoreButton.addEventListener("click", toggleProductSection);
 
-
 function toggleMapSection() {
   // Get the element with the id "Content3"
   const content3Section = document.getElementById("Content3");
@@ -153,7 +152,13 @@ function toggleInquireSection() {
   content3Section.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
+function toggleApplicationSection() {
+  // Get the element with the id "Content3"
+  const content3Section = document.getElementById("Content3");
 
+  // Scroll to the "Content3" section when the button is clicked
+  content3Section.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 
 function toggleTopSection() {
   // Get the element with the id "Content3"
@@ -162,3 +167,6 @@ function toggleTopSection() {
   // Scroll to the "Content3" section when the button is clicked
   content3Section.scrollIntoView({ behavior: "smooth", block: "start" });
 }
+
+
+

@@ -53,10 +53,10 @@
     width: 270px;
     height: auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(99, 98, 98, 0.295);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(6.5px);
-    -webkit-backdrop-filter: blur(6.5px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 10px;
     display: flex;
@@ -242,10 +242,10 @@
     width: 96%;
     height: auto;
     padding: 20px 0;
-    background: rgba(255, 255, 255, 0.1);
+     background: rgba(99, 98, 98, 0.295);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(6.5px);
-    -webkit-backdrop-filter: blur(6.5px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 10px;
     display: flex;

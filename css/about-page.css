@@ -1,4 +1,8 @@
 /**------FOR SECTION------ */
+main {
+  background-color: rgb(17, 17, 17);
+}
+
 #Content1 {
   position: relative;
   overflow: hidden;
@@ -105,7 +109,6 @@
   overflow: hidden;
   height: auto;
   margin-bottom: -1px;
-  background-color: rgb(23, 16, 88);
 }
 
 #Content3 .heading {
@@ -129,24 +132,21 @@
 }
 
 #Content3 .mission-container {
-  margin: 5px 100px 100px 100px;
-  padding: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-  border-right: 3px solid white;
+  flex: wrap;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+  width: 80%;
 }
 
 #Content3 .mission-image img {
-  width: 700px;
+  width: 500px;
   border-radius: 20px;
-  margin-right: 20px;
 }
 
 #Content3 .mission-text{
-  margin:20px;
-  margin-top: 150px;
+  margin: 50px;
 }
 
 #Content3 .mission {
@@ -162,24 +162,22 @@
 
 
 #Content3 .vision-container {
-  margin: 5px 100px 100px 100px;
-  padding: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-  border-left: 3px solid white;
+  flex: wrap;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  justify-content: space-around;
+  width: 80%;
 }
 
 #Content3 .vision-image img {
-  width: 700px;
+  width: 500px;
   border-radius: 20px;
-  margin-right: 20px;
 }
 
 #Content3 .vision-text{
-  margin:20px;
-  margin-top: 150px;
+  margin: 50px;
 }
 
 #Content3 .vision {

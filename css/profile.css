@@ -1,0 +1,107 @@
+/**------FOR SECTION------ */
+main {
+  background-color: var(--color-white);
+}
+
+#Content1 {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  margin-bottom: -1px;
+  z-index: 1;
+}
+
+#Content1 .user-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 80px;
+  padding: 20px;
+  padding-left: 50px;
+}
+
+#Content1 .profile-picture img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+#Content1 .user-details {
+  margin-left: 20px;
+}
+
+#Content1 .user-menu {
+  display: flex;
+  justify-content: flex-start;
+  height: 45px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+#Content1 .menu-links {
+  display: flex;
+  padding-left: 100px;
+}
+
+#Content1 .menu-links li {
+  margin: 0 50px;
+}
+
+#Content1 .menu-links li a {
+  color: var(--color-gray-100);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 5px solid var(--color-royalblue);
+}
+
+#Content1 .profile-content{
+  margin: 20px 50px;
+  padding: 20px;
+  padding-left: 100px;
+  height: auto;
+}
+
+#Content1 .profile-content h3{
+  margin: 15px 0;
+}
+
+#Content1 .profile-content h4{
+  margin: 15px 0;
+}
+
+#Content1 .profile-content .details{
+  margin: 15px 0;
+}
+
+#Content1 .profile-content .details .user-name, .id-num, .user-email, .user-contact, .user-address{
+  margin: 6px 0;
+  width: auto;
+}
+
+#Content1 .sidemenu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  margin: 0 20px;
+  margin-top: 275px;
+  height: 100vh;
+  padding: 20px;
+}
+
+#Content1 .sidemenu h4{
+  margin-bottom: 10px;
+}
+
+#Content1 .sidemenu a{
+  color: var(--color-gray-100);
+}
+
+#Content1 .sidemenu a:hover{
+  color: var(--color-royalblue);
+}
