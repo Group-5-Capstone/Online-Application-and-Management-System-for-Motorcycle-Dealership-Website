@@ -167,6 +167,3 @@ function toggleTopSection() {
   // Scroll to the "Content3" section when the button is clicked
   content3Section.scrollIntoView({ behavior: "smooth", block: "start" });
 }
-
-
-

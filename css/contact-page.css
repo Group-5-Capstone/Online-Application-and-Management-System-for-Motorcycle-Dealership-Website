@@ -264,13 +264,21 @@ main {
   padding: 0 50px;
 }
 
+#Content4 {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  margin-bottom: -1px;
+  z-index: 1;
+}
+
 #Content4 h2 {
   text-align: center;
   margin: 20px;
 }
 
 #accordion {
-  margin: 0 auto;
+  margin: 100px auto;
   width: 50%;
 }
 
