@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/Register.css" />
+    <link rel="stylesheet" href="../css/media-queries.css" />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <!-- Remix Icon CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Title -->
+    <title>Register</title>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <!-- Brand logo Text -->
+        <a href="../html/index.html" class="logo">Motorstar</a>
+        <!-- Navigation bar -->
+        <ul class="navbar">
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/products.html">Products</a></li>
+          <!--<li><a href="../html/application.html">Application</a></li>-->
+          <li><a href="../html/about.html">About</a></li>
+          <li><a href="../html/contact.html">Contact Us</a></li>
+        </ul>
+        <!-- User registration and menu icon -->
+        <div class="main">
+          <a href="../html/login.html" class="user" id="loginLink"
+            >Log In<i class="ri-account-circle-fill"></i
+          ></a>
+          <div class="ri-menu-line" id="menu-icon"></div>
+        </div>
+      </header>
+
+      <section id="Content1">
+        <div>
+          <img src="../images/home 4.jpg" alt="section1-image-bg" />
+          <div class="tagline-text">
+            <div class="login-form" id="loginForm">
+              <div class="ca-title">
+                <h2>Create A New Account</h2>
+                <p>Start Your Journey with Us Today.</p>
+              </div>
+              <form action="#">
+                <div class="form-group">
+                  <label for="first-name">First Name:</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    placeholder="eg. Juan"
+                    required=""
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="middle-initial">Middle Initial:</label>
+                  <input
+                    type="text"
+                    id="middle-initial"
+                    placeholder="eg. D"
+                    required=""
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name:</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    placeholder="e.g Dela Cruz"
+                    required=""
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="e.g juandelacruz123@mail.com"
+                    required=""
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder=""
+                    required=""
+                  />
+                </div>
+                <input type="submit" value="Create Account" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--JS Link-->
+    <script type="text/javascript" src="../javascript/script.js"></script>
+  </body>
+</html>

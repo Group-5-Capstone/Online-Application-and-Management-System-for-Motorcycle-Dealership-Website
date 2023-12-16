@@ -127,6 +127,7 @@ main {
 
 #Content2 .content {
   font-size: var(--font-size-lg);
+  color: var(--color-gray-100);
   font-weight: 600;
   margin: 50px 0;
 }
@@ -142,35 +143,39 @@ main {
 }
 
 #Content2 .container .specs-content {
-  background-color: rgba(255, 228, 188, 0.55);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 6px 6px 1px 0 rgba(31, 38, 135, 1);
   border: 3px solid var(--color-gray-100);
-  border-radius: 5px;
-  border-top-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  padding: 10px;
+  border-radius: 25px;
+  padding: 5px;
   margin: 10px;
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
   width: 300px;
-  height: 100px;
+  height: 50px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#Content2 .container .specs-content:hover {
+  scale: 1.1;
+  background-color: rgba(255, 189, 45, 0.55);
 }
 
 #Content2 .container .specs-content .specs-title {
   font-weight: bold;
 }
 
-
-#Content3{
+#Content3 {
   #Content2 {
-  position: relative;
-  overflow: hidden;
-  height: auto;
-  margin-bottom: -1px;
-  padding: 0 50px;
-}
-
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    margin-bottom: -1px;
+    padding: 0 50px;
+  }
 }
 h2 {
   color: #333;

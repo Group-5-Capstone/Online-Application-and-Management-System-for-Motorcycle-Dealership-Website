@@ -368,7 +368,7 @@ main {
 #Content3 {
   position: relative;
   overflow: hidden;
-  height: auto;
+  min-height: auto;
   margin-bottom: -1px;
 }
 
@@ -389,8 +389,8 @@ main {
 }
 
 #Content3 .home-product-col {
-  background-color: #0075ff;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
@@ -399,7 +399,7 @@ main {
   width: 400px;
   height: auto;
   padding: 20px;
-  margin: 20px 30px;
+  margin: 50px 30px;
   transition: all 0.3s ease-in;
   text-align: center;
   cursor: pointer;
@@ -415,10 +415,11 @@ main {
 
 #Content3 .home-product-col h2 {
   margin-top: 20px;
+  color: var(--color-gray-100);
 }
 
 #Content3 .home-product-col:hover {
-  scale: 1.1;
+  scale: 1.05;
 }
 
 #Content3 .home-product-col img:hover {
@@ -448,7 +449,7 @@ main {
   left: 0;
   width: 100%;
   height: 0;
-  background: rgba(59, 59, 59, 0.5);
+  background: rgba(121, 118, 118, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -468,7 +469,7 @@ main {
 #Content4 {
   position: relative;
   overflow: hidden;
-  height: auto;
+  min-height: auto;
   margin-bottom: -1px;
   padding: 0 50px;
 }
@@ -502,19 +503,25 @@ main {
 }
 
 #Content4 .container .specs-content {
-  background-color: rgba(255, 228, 188, 0.55);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 6px 6px 1px 0 rgba(31, 38, 135, 1);
   border: 3px solid var(--color-gray-100);
-  border-radius: 5px;
-  border-top-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  padding: 10px;
+  border-radius: 25px;
+  padding: 5px;
   margin: 10px;
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
   width: 300px;
-  height: 100px;
+  height: 50px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#Content4 .container .specs-content:hover {
+  scale: 1.1;
+  background-color: rgba(255, 189, 45, 0.55);
 }
 
 #Content4 .container .specs-content .specs-title {
@@ -525,7 +532,7 @@ main {
   display: block;
   margin: 50px auto;
   padding: 10px 20px;
-  max-width: 200px;
+  max-width: 250px;
   background: none;
   border: 2px solid var(--color-gray-100);
   color: var(--color-gray-100);
@@ -561,30 +568,11 @@ main {
   height: 100%;
 }
 
-#Content5 {
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-  margin-bottom: -1px;
-  text-align: center;
-  padding-top: 25px;
-}
-
-#Content5 h1 {
-  margin-bottom: 10px;
-  font-size: 32px;
-}
-
-#Content5 p {
-  font-weight: 200;
-  color: var(--color-gray-100);
-  font-size: var(--font-size-lg);
-}
 
 #Content6 {
   position: relative;
   overflow: hidden;
-  height: auto;
+  min-height: auto;
   margin-bottom: -1px;
   text-align: center;
   padding-top: 25px;
@@ -597,6 +585,8 @@ main {
 
 #Content6 p {
   font-weight: 200;
+  margin: 25px;
+  padding: 5px;
   color: var(--color-gray-100);
   font-size: var(--font-size-lg);
 }
@@ -606,33 +596,24 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin: 0 auto;
-  width: 80%;
+  margin: 0px auto;
+  width: 90%;
 }
 
 #Content6 .testimonial-col {
-  background-color: rgba(255, 228, 188, 0.55);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 5px 15px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 50px;
-  width: 400px;
-  height: 470px;
-  padding: 20px;
-  margin: 20px 30px;
+  max-width: 500px;
+  min-height: 400px;
+  padding: 10px;
+  margin: 10px;
   transition: all 0.3s ease-in;
-  text-align: center;
-  cursor: pointer;
-}
-
-#Content6 .testimonial-col img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  align-items: center;
-  transition: all 0.3s ease-in;
+  text-align: left;
 }
 
 #Content6 .testimonial-col span {
@@ -646,6 +627,11 @@ main {
   color: var(--color-gray-100);
   font-weight: 200;
   transition: all 0.3s ease-in;
+}
+
+#Content6 .testimonial-col h2 {
+  font-weight: 600;
+  margin: 30px;
 }
 
 #Content6 .testimonial-col:hover {

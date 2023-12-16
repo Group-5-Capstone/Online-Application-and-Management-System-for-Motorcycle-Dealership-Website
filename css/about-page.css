@@ -1,6 +1,6 @@
 /**------FOR SECTION------ */
 main {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(255, 255, 255);
 }
 
 #Content1 {
@@ -104,133 +104,35 @@ main {
   height: 100%;
 }
 
-#Content3 {
+#Content2 {
   position: relative;
   overflow: hidden;
   height: auto;
   margin-bottom: -1px;
+  padding: 0 50px;
+  z-index: 1;
 }
 
-#Content3 .heading {
+#Content2 .heading {
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
+  color: var(--color-gray-100);
   z-index: 2;
-  margin-top: 100px;
 }
 
-#Content3 .heading h2 {
-  font-size: 45px;
-  font-weight: 400;
+#Content2 .heading h1 {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 50px 0;
 }
 
-#Content3 .brandDescription {
-  padding: 20px 300px;
+#Content2 .content {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin: 50px 0;
 }
 
-#Content3 .mission-container {
-  display: flex;
-  flex: wrap;
-  align-items: center;
-  margin: 0 auto;
-  justify-content: space-around;
-  width: 80%;
-}
-
-#Content3 .mission-image img {
-  width: 500px;
-  border-radius: 20px;
-}
-
-#Content3 .mission-text{
-  margin: 50px;
-}
-
-#Content3 .mission {
-  font-size: 38px;
-  color: var(--color-white);
-}
-
-#Content3 .mission-content {
-  font-size: 20px;
-  color: var(--color-white);
-  text-align: justify;
-}
-
-
-#Content3 .vision-container {
-  display: flex;
-  flex: wrap;
-  align-items: center;
-  margin: 0 auto;
-  margin-bottom: 100px;
-  justify-content: space-around;
-  width: 80%;
-}
-
-#Content3 .vision-image img {
-  width: 500px;
-  border-radius: 20px;
-}
-
-#Content3 .vision-text{
-  margin: 50px;
-}
-
-#Content3 .vision {
-  font-size: 38px;
-  color: var(--color-white);
-}
-
-#Content3 .vision-content {
-  font-size: 20px;
-  color: var(--color-white);
-  text-align: justify;
-}
-
-#Content4 {
-  position: relative;
-  overflow: hidden;
-  height: auto;
-  margin-bottom: -1px;
-  background-color: rgb(23, 16, 88);
-}
-
-#Content4 .heading {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  z-index: 2;
-  margin-top: 100px;
-}
-
-#Content4 .heading h2 {
-  font-size: 45px;
-  font-weight: 400;
-}
-
-#Content4 .brandDescription {
-  padding: 20px 300px;
-}
-
-#Content4 .faqs-section {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  z-index: 2;
-  margin-top: 200px;
-}
-
-#Content4 .faqs-section h2 {
-  font-size: 45px;
-  font-weight: 400;
+#Content2 .content ul li {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin: 50px 0;
 }

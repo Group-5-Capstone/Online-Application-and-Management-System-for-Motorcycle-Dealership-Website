@@ -19,225 +19,66 @@
       rel="stylesheet"
     />
     <!-- Title -->
-    <title>Log in</title>
+    <title>Log In</title>
   </head>
 
   <body>
-    <header>
-      <!-- Brand logo Text -->
-      <a href="../html/index.html" class="logo">BrandName</a>
-      <!-- Navigation bar -->
-      <ul class="navbar">
-        <li><a href="../html/index.html" class="active">Home</a></li>
-        <li><a href="../html/products.html">Products</a></li>
-        <li><a href="../html/application.html">Application</a></li>
-        <li><a href="../html/about.html">About</a></li>
-        <li><a href="../html/contact.html">Contact Us</a></li>
-      </ul>
-      <!-- User registration and menu icon -->
-      <div class="main">
-        <a href="../html/login.html" class="user" id="loginLink"
-          >Log In<i class="ri-account-circle-fill"></i
-        ></a>
-        <div class="ri-menu-line" id="menu-icon"></div>
-      </div>
-    </header>
-
-    <section id="Content1">
-      <div>
-        <img src="../images/MT-125.jpg" alt="section1-image-bg" />
-        <div class="tagline-text">
-          <h2>Unleash Wild, Drive with us</h2>
-          <div class="buttons">
-            <button class="explore-button" onclick="toggleProductSection()">
-              Explore
-            </button>
-            <button class="register-button" onclick="toggleRegisterForm()">
-              Register
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="Content2">
-      <div class="content-inner">
-        <div class="register-form" id="registerForm">
-          <span class="icon-close" onclick="closeForm()"
-            ><i class="ri-close-line"></i
-          ></span>
-          <div class="ca-title">
-            <h2>Create A New Account</h2>
-            <p>Start Your Journey with Us Today.</p>
-          </div>
-          <form action="#">
-            <div class="form-group">
-              <label for="first-name">First Name:</label>
-              <input
-                type="text"
-                id="first-name"
-                placeholder="eg. Juan"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="middle-initial">Middle Initial:</label>
-              <input
-                type="text"
-                id="middle-initial"
-                placeholder="eg. D"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="last-name">Last Name:</label>
-              <input
-                type="text"
-                id="last-name"
-                placeholder="e.g Dela Cruz"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="e.g juandelacruz123@mail.com"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="password">Password:</label>
-              <input type="password" id="password" placeholder="" required="" />
-              <i class="eye-icon ri-eye-close-line" data-toggle="password"></i>
-            </div>
-            <input type="submit" value="Create Account" />
-          </form>
-          <div class="have-account">
-            <p>
-              Already have an account?
-              <a href="#" onclick="showLoginForm()"><span>Log in.</span></a>
-            </p>
-          </div>
-          <div class="tac-pp">
-            <p>
-              By clicking the Sign up button you agree to our<a
-                href="../html/Terms-and-condition.html"
-                ><span>Terms &amp Condition</span></a
-              >and<a href="../html/privacy-policy.html"
-                ><span>Privacy Policy.</span></a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="login-form" id="loginForm">
-          <span class="icon-close" onclick="closeForm()"
-            ><i class="ri-close-line"></i
-          ></span>
-          <div class="ca-title">
-            <h2>Welcome Back!</h2>
-            <p>Please log in to continue.</p>
-          </div>
-          <form action="#">
-            <div class="form-group">
-              <label for="id-number">Account Number:</label>
-              <input
-                type="text"
-                id="id-number"
-                placeholder="eg. 10001234567"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="login-password">Password:</label>
-              <input
-                type="password"
-                id="login-password"
-                placeholder=""
-                required=""
-              />
-              <i class="eye-icon ri-eye-close-line" data-toggle="password"></i>
-            </div>
-            <input type="submit" value="Log in" />
-          </form>
-          <div class="dont-have-account">
-            <p>
-              Don't have an account?
-              <a href="#" onclick="showRegistrationForm()"
-                ><span>Create new account.</span></a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Footer Design-->
-    <footer>
-      <div class="content">
-        <div class="row1 box">
-          <div class="upper">
-            <div class="topic">BrandName</div>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet,
-              deleniti enim eum itaque voluptas saepe provident atque voluptate
-              tempore deserunt at exercitationem soluta.
-            </p>
-          </div>
-        </div>
-
-        <div class="row2 box">
+    <main>
+      <header>
+        <!-- Brand logo Text -->
+        <a href="../html/index.html" class="logo">Motorstar</a>
+        <!-- Navigation bar -->
+        <ul class="navbar">
           <li><a href="../html/index.html">Home</a></li>
           <li><a href="../html/products.html">Products</a></li>
-          <li><a href="../html/application.html">Application</a></li>
-          <br />
-          <li><a href="../html/privacy-policy.html">Privacy Policy</a></li>
-          <li>
-            <a href="../html/Terms-and-condition.html">Terms &amp Condition</a>
-          </li>
-          <li><a href="../html/contact.html">FAQs</a></li>
+          <!--<li><a href="../html/application.html">Application</a></li>-->
+          <li><a href="../html/about.html">About</a></li>
+          <li><a href="../html/contact.html">Contact Us</a></li>
+        </ul>
+        <!-- User registration and menu icon -->
+        <div class="main">
+          <a href="../html/Register.html" class="user" id="loginLink"
+            >Register<i class="ri-account-circle-fill"></i
+          ></a>
+          <div class="ri-menu-line" id="menu-icon"></div>
         </div>
+      </header>
 
-        <div class="row3 box">
-          <div class="topic">Contact us</div>
-          <div class="phone">
-            <a href="#"><i class="ri-phone-fill"></i>+6391234567</a>
-          </div>
-          <div class="email">
-            <a href="#"><i class="ri-mail-fill"></i>group5@email.com</a>
-          </div>
-          <div class="address">
-            <a href="#"><i class="ri-navigation-fill"></i>Lian, Batangas</a>
-          </div>
-        </div>
-
-        <div class="row4 box">
-          <div class="topic">Sign up to our Newsletter</div>
-          <form action="#">
-            <input type="text" placeholder="Enter email address" required="" />
-            <input type="submit" name="" value="Send" />
-            <div class="media-icons">
-              <a href="http://facebook.com" target="_blank"
-                ><i class="ri-facebook-fill ri-1x"></i
-              ></a>
-              <a href="http://instagram.com" target="_blank"
-                ><i class="ri-instagram-fill ri-1x"></i
-              ></a>
-              <a href="http://twitter.com" target="_blank"
-                ><i class="ri-twitter-fill ri-1x"></i
-              ></a>
-              <a href="http://messenger.com" target="_blank"
-                ><i class="ri-messenger-fill ri-1x"></i
-              ></a>
+      <section id="Content1">
+        <div>
+          <img src="../images/home 4.jpg" alt="section1-image-bg" />
+          <div class="tagline-text">
+            <div class="login-form" id="loginForm">
+            <div class="ca-title">
+              <h2>Welcome Back!</h2>
+              <p>Please log in to continue.</p>
             </div>
-          </form>
+            <form action="#">
+              <div class="form-group">
+                <label for="id-number">Account Number:</label>
+                <input
+                  type="text"
+                  id="id-number"
+                  placeholder="eg. 10001234567"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="login-password">Password:</label>
+                <input
+                  type="password"
+                  id="login-password"
+                  placeholder=""
+                  required=""
+                />
+              </div>
+              <input type="submit" value="Log in" />
+            </form>
+          </div>
+          </div>
         </div>
-      </div>
-      <div class="bottom">
-        <p>Copyright © 2023 <span>BrandName</span> Made by Group5</p>
-      </div>
-    </footer>
+      </section>
+    </main>
 
     <!--JS Link-->
     <script type="text/javascript" src="../javascript/script.js"></script>

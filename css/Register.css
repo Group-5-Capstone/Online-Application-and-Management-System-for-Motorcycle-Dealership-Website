@@ -39,7 +39,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  height: 40%;
+  height: 65%;
 }
 
 /* Styling for login form */
@@ -86,6 +86,7 @@ main {
 }
 
 #Content1 .login-form form .form-group input[type="text"],
+#Content1 .login-form form .form-group input[type="email"],
 #Content1 .login-form form .form-group input[type="password"] {
   font-size: 16px;
   font-weight: 400;

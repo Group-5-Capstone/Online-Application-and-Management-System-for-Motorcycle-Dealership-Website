@@ -288,6 +288,7 @@ main {
   text-align: center;
 }
 
+
 #Content3 .home-product-row {
   display: flex;
   flex-wrap: wrap;
@@ -298,7 +299,7 @@ main {
 }
 
 #Content3 .home-product-col {
-  background-color: rgba(255, 228, 188, 0.55);
+  background-color: #e6a749;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -306,7 +307,7 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 50px;
   width: 400px;
-  height: 450px;
+  height: auto;
   padding: 20px;
   margin: 20px 30px;
   transition: all 0.3s ease-in;
@@ -315,16 +316,26 @@ main {
 }
 
 #Content3 .home-product-col img {
-  width: 200px;
-  height: 200px;
-  border-radius: 10%;
+  width: 350px;
+  max-height: auto;
+  border-radius: 40px;
   align-items: center;
   transition: all 0.3s ease-in-out;
 }
 
 #Content3 .home-product-col h2 {
-  margin-top: 30px;
+  margin-top: 20px;
+  color: var(--color-white);
 }
+
+#Content3 .home-product-col:hover {
+  scale: 1.1;
+}
+
+#Content3 .home-product-col img:hover {
+  cursor: pointer;
+}
+
 
 #Content3 .c3-buttons a {
   display: block;
